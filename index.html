@@ -234,58 +234,9 @@
   <div class="article-entry" itemprop="articleBody">
     
     <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>微积分3内容主要是围绕多维空间展开，本章节为矢量引入，将包含unit vector (单位向量), dot product (点乘), cross product (叉乘), line and plane equation (如何通过矢量获得线等式和平面等式)</p>
-<h2 id="Vector"><a href="#Vector" class="headerlink" title="Vector"></a>Vector</h2><p>矢量英文名Vector, 用于表示一个变量或常量在空间中的方向与大小；</p>
-<p>我们在空间中任取2个点 P(0, 0) 和 Q(2, 2)，由于矢量具有方向，我们计算矢量PQ<br>$$<br>\vec{PQ} = ,&lt;2-0, 2-0&gt;, = ,&lt;2,,2&gt;\<br>表示从P到Q点\<br>\vec{QP} = ,&lt;0-2, 0-2&gt;, = ,&lt;-2,,-2&gt;\<br>表示从Q到P点<br>$$</p>
-<p>我们在空间中画矢量，通常以原点(original Point)为起点绘画，如图</p>
-<p><img src="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/image-20210910001504840.png" alt="image-20210910001504840"></p>
-<p>下面的是在三维矢量的图片</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//maple 代码</span><br><span class="line">with(VectorCalculus)</span><br><span class="line">v := &lt;2, 2, 2&gt; </span><br><span class="line">PlotVector(v, color = red)</span><br></pre></td></tr></table></figure>
-
-<p><img src="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/image-20210909234603373.png" alt="image-20210909234603373"></p>
-<p>三维世界中我们用 <strong>i, j, k</strong> 分别代表x, y, z轴方向,二维平面亦如此，所以</p>
-<p>矢量v写作：<br>$$<br>\vec{v} = 2i+2j+2k,或\ \vec{v} = &lt;2, 2, 2&gt;<br>$$<br>意思是，矢量v在x 轴方向大小2, 在y轴方向大小2, 在z轴方向大小2</p>
-<p><strong>矢量之间也能做加减</strong><br>$$<br>\vec{v} + \vec{w} = &lt;v_1+w_1, v_2+w_2, v_3+w_3&gt;\<br>\vec{v} - \vec{w}= &lt;v_1-w_1, v_2-w_2, v_3-w_3&gt;\<br>c*(\vec{v}+\vec{w}) = c<em>\vec{v} + c</em>\vec{w}<br>$$<br>矢量的长度和：与计算勾股定理斜边长类似，可以说无论三维还是二维计算矢量长度本质上都是勾股定理</p>
-<p>以上面矢量 w=&lt;2,2&gt; 和  v =&lt;2,2,2&gt; 为例<br>$$<br>||\vec{w}|| = \sqrt{2^2+2^2} = 2\sqrt{2}\<br>||\vec{v}|| = \sqrt{2^2+2^2+2^2} = 2\sqrt{3}<br>$$<br>一般式子<br>$$<br>||\vec{v}|| = \sqrt{a^2+b^2+c^2}<br>$$</p>
-<h2 id="Unit-Vector"><a href="#Unit-Vector" class="headerlink" title="Unit Vector"></a>Unit Vector</h2><p>Unit Vector 是单位向量（通常可用来表示一个向量的方向），指长度为1的向量。最常见的单位向量便是坐标轴的单位<br>$$<br>&lt;1, 0, 0&gt;\<br>&lt;0, 1, 0&gt;\<br>&lt;0, 0, 1&gt;<br>$$</p>
-<p>我们还可以根据公式得出任意矢量的单位向量<br>$$<br>\vec{u}, =,\frac{\vec{v}}{||\vec{v}||}<br>$$<br>例子：<br>$$<br>\vec{v}=&lt;2,2,2&gt;, ;求;unit;vector\<br>\vec{u}=\frac{&lt;2,2,2&gt;}{\sqrt{2^2+2^2+2^2}},=&lt;\frac{1}{\sqrt{3}},, \frac{1}{\sqrt{3}},\frac{1}{\sqrt{3}},&gt;<br>$$</p>
-<h2 id="Dot-Product"><a href="#Dot-Product" class="headerlink" title="Dot Product"></a>Dot Product</h2><p>点乘<br>$$<br>\vec{v}\cdot\vec{w}=v_1<em>w_1+v_2</em>w_2+v_2<em>w_2=||\vec{v}||</em>||\vec{w}||*cos(\theta)<br>$$<br>通过点乘，我们还可以判断两个矢量是否相互垂直，因为cos(theta)，两矢量的夹角，若夹角为90度，即垂直cos=0, 点乘结果为0，所以在u和v不为0的情况下，u与v相互垂直</p>
-<h3 id="矢量投影"><a href="#矢量投影" class="headerlink" title="矢量投影"></a>矢量投影</h3><p>求<strong>矢量u在矢量v上的投影</strong>，首先我们要知道v的方向，这个可以用单位向量表示，矢量u的大小乘以cos夹角刚好可以得出投影的大小，最后总结出来的公式如下：<br>$$<br>proj_v\vec{u} = (||\vec{u}||*cos(\theta))*\frac{\vec{v}}{||\vec{v}||}\<br>=(\frac{\vec{u}\cdot\vec{v}}{||\vec{v}||})*\frac{\vec{v}}{||\vec{v}||}\<br>=(\frac{\vec{u}\cdot\vec{v}}{||\vec{v}||^2})*\vec{v}<br>$$<br>u在v上的投影是与v平行的，如图所示</p>
-<p><img src="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/image-20210910182353703.png" alt="image-20210910182353703"></p>
-<p>若要求垂直的部分<br>$$<br>垂直部分结果,=\vec{u}-proj_v\vec{u}<br>$$</p>
-<h2 id="Cross-Product"><a href="#Cross-Product" class="headerlink" title="Cross Product"></a>Cross Product</h2><p>叉乘<br>$$<br>\vec{w}\times\vec{v} = \begin{matrix}i&amp;j&amp;k\w_1&amp;w_2&amp;w_3\v_1&amp;v_2&amp;v_3\end{matrix}=(w_2v_3-v_2w_3)i-(w_1v_3-w_3v_1)j+(w_1v_2-w_2v_1)k<br>$$</p>
-<h3 id="叉乘的结果在图上表示"><a href="#叉乘的结果在图上表示" class="headerlink" title="叉乘的结果在图上表示"></a>叉乘的结果在图上表示</h3><p><img src="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/image-20210910185004395.png" alt="image-20210910185004395"></p>
-<p>蓝色的就是叉乘的结果，红色与黄色是原来的矢量</p>
-<p><img src="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/image-20210910185016479.png" alt="image-20210910185016479"></p>
-<p>叉乘前后矢量的顺序不一样会导致结果大小相同，方向不同<br>$$<br>\vec{v}\times\vec{w} \neq\vec{w}\times\vec{v}<br>$$</p>
-<p>常见的叉乘公式</p>
-<p><img src="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/image-20210910185745002.png" alt="image-20210910185745002"></p>
-<p><img src="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/image-20210910185908639.png" alt="image-20210910185908639"></p>
-<h3 id="叉乘的几何意义"><a href="#叉乘的几何意义" class="headerlink" title="叉乘的几何意义"></a>叉乘的几何意义</h3><p><img src="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/image-20210910185849513.png" alt="image-20210910185849513"></p>
-<p>dot product 与 cross product相结合，计算平行四边体的体积</p>
-<p><img src="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/image-20210910185952800.png" alt="image-20210910185952800"></p>
-<h2 id="Line-And-Plane-Equation"><a href="#Line-And-Plane-Equation" class="headerlink" title="Line And Plane Equation"></a>Line And Plane Equation</h2><p>本节是关于线与平面的等式</p>
-<h3 id="Line-Equation"><a href="#Line-Equation" class="headerlink" title="Line Equation"></a>Line Equation</h3><p>当我们确定线上的2个点或者知道1个点与线的方向时，我们可以从中得出这条线的等式(方程，参数方程)</p>
-<p><img src="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/image-20210910190216833.png" alt="image-20210910190216833"></p>
-<p>例题</p>
-<p>已知P(2,3,4), Q(6,8,9)</p>
-<p>求PQ所在直线的线性等式<br>$$<br>先找出方向\\vec{PQ}=&lt;6-2,8-3,9-4&gt;\=:&lt;4,5,5&gt;\选P或者Q带入公式中\<br>r(t)=&lt;2,3,4&gt;+t*&lt;4,5,5&gt;=&lt;4t+2，5t+3,5t+4&gt;<br>$$</p>
-<p>Line Equation的几何现实意义</p>
-<p><img src="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/image-20210912182953186.png" alt="image-20210912182953186"></p>
-<p>通过这个等式，我们可以得出任何时间在此直线上点的坐标</p>
-<h3 id="求点到线段的距离"><a href="#求点到线段的距离" class="headerlink" title="求点到线段的距离"></a>求点到线段的距离</h3><p><img src="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/image-20210910191018824.png" alt="image-20210910191018824"></p>
-<p>从图上我们可以看出要求s到p所在直线的距离，即求PS的正弦距离，叉乘中有运用正弦角</p>
-<p>所以：</p>
-<p><img src="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/image-20210910191257276.png" alt="image-20210910191257276"></p>
-<h3 id="Plane-Equation"><a href="#Plane-Equation" class="headerlink" title="Plane Equation"></a>Plane Equation</h3><p>得出plane equation的过程：根据2个矢量相互垂直等于0</p>
-<p><img src="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/image-20210912183250424.png" alt="image-20210912183250424"></p>
-<p>推到过程</p>
-<p><img src="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/image-20210912183401932.png" alt="image-20210912183401932"></p>
-<p>最后Equation<br>$$<br>Ax,+By,+Cz,-Ax_0,-By_0,-Cz_0,=0\<br>Ax,+By,+Cz, = Ax_0,+By_0,+Cz_0\<br>Ax,+By,+Cz, = D<br>$$</p>
-<h3 id="求点到平面的距离"><a href="#求点到平面的距离" class="headerlink" title="求点到平面的距离"></a>求点到平面的距离</h3><p>这种问题通过图片可以很直观地找出解决方法</p>
-<p><img src="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/image-20210912183848201.png" alt="image-20210912183848201"></p>
-<p>求S点到P点所在平面（3x+2y+6z=6）的距离，其实就是找矢量PS在矢量n方向的投影</p>
-<p><img src="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/image-20210912184010922.png" alt="image-20210912184010922"></p>
-
+    
+    <a class="article-more-a" href="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/#more">more >></a>
+    
     
 
     
