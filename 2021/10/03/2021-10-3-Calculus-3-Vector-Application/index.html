@@ -6,21 +6,47 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://peter-bear.github.io">
-  <title>peterbear</title>
+  <title>Calculus 3-Vector Application | peterbear</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-    
-    <!-- <meta name="keywords" content="">
-    <meta name="description" content=""> -->
-  
-  <meta property="og:type" content="website">
-<meta property="og:title" content="peterbear">
-<meta property="og:url" content="https://peter-bear.github.io/index.html">
+  <meta name="description" content="介绍矢量也可以被进行参数化，如之前提到的Line Equation,线等式其实也是矢量进行参数化的一种表现形式。若我们将矢量进行参数化，我们就能用矢量方程去模拟X,Y,Z平面的物体运动变化。本节将介绍矢量方程以及随着矢量方程衍生的其他矢量。 矢量方程 Vector Function  矢量方程，r(t), x,y,z方向变化随着参数t变化而变化 矢量方程x,y,z各个方向都有指定的函数，如f(t)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Calculus 3-Vector Application">
+<meta property="og:url" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/index.html">
 <meta property="og:site_name" content="peterbear">
+<meta property="og:description" content="介绍矢量也可以被进行参数化，如之前提到的Line Equation,线等式其实也是矢量进行参数化的一种表现形式。若我们将矢量进行参数化，我们就能用矢量方程去模拟X,Y,Z平面的物体运动变化。本节将介绍矢量方程以及随着矢量方程衍生的其他矢量。 矢量方程 Vector Function  矢量方程，r(t), x,y,z方向变化随着参数t变化而变化 矢量方程x,y,z各个方向都有指定的函数，如f(t)">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003184135670.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003184151943.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003184633317.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003184713187.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003184819198.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003194536698.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003194551180.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003195314848.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003195529004.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003195646457.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003195802373.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003214321142.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003214156188.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003214447168.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003214247936.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003213952288.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003214002111.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003214030017.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003214841508.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/Q1.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/Q2.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/Q3.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003215605751.png">
+<meta property="article:published_time" content="2021-10-03T04:00:00.000Z">
+<meta property="article:modified_time" content="2021-10-04T01:59:16.698Z">
 <meta property="article:author" content="peter">
+<meta property="article:tag" content="数学">
+<meta property="article:tag" content="微积分">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003184135670.png">
   
     <link rel="alternative" href="/atom.xml" title="peterbear" type="application/atom+xml">
   
@@ -201,25 +227,25 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-
-  
-    <article id="post-2021-10-3-Calculus-3-Vector-Application" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-2021-10-3-Calculus-3-Vector-Application" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/" target="_blank">Calculus 3-Vector Application</a>
-  
+    <h1 class="article-title" itemprop="name">
+      Calculus 3-Vector Application
     </h1>
   
 
 
   
   
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 <a href="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/" class="archive-article-date">
         <time datetime="2021-10-03T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-03</time>
 </a>
@@ -227,6 +253,27 @@
   
   
     
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">541字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">2分</span>
+    </span>
+  </span>
+</div>
+
 
   
   </header>
@@ -291,97 +338,25 @@
     
 
     
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数学</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">微积分</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          peter
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/" title="Calculus 3-Vector Application" target="_blank">https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/</a>
+        </li>
         
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
+        <li>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
         
-        
+      </ul>
     </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2021-9-9-Calculus-3-Vector-Introduction" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/" target="_blank">Calculus 3-Vector Introduction</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/" class="archive-article-date">
-        <time datetime="2021-09-09T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-09</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>微积分3内容主要是围绕多维空间展开，本章节为矢量引入，将包含unit vector (单位向量), dot product (点乘), cross product (叉乘), line and plane equation (如何通过矢量获得线等式和平面等式)</p>
-    
-    <a class="article-more-a" href="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/#more">more >></a>
-    
-    
-
-    
-
     
 
   </div>
@@ -406,16 +381,76 @@
     
 
     
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/">展开全文 >></a>
-    </p>
+
     
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
 
     
     <div class="clearfix"></div>
   </div>
   </div>
 </article>
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Calculus 3-Vector Introduction</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -430,766 +465,33 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2021-08-23-JAVA局域网聊天小程序" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2021/08/23/2021-08-23-JAVA%E5%B1%80%E5%9F%9F%E7%BD%91%E8%81%8A%E5%A4%A9%E5%B0%8F%E7%A8%8B%E5%BA%8F/" target="_blank">JAVA局域网聊天小程序</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2021/08/23/2021-08-23-JAVA%E5%B1%80%E5%9F%9F%E7%BD%91%E8%81%8A%E5%A4%A9%E5%B0%8F%E7%A8%8B%E5%BA%8F/" class="archive-article-date">
-        <time datetime="2021-08-23T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-23</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="（局域网聊天）TCP-IP协议的局域网Socket通信"><a href="#（局域网聊天）TCP-IP协议的局域网Socket通信" class="headerlink" title="（局域网聊天）TCP/IP协议的局域网Socket通信"></a>（局域网聊天）TCP/IP协议的局域网Socket通信</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>马上开学了，闲着没事做，决定重新温习JAVA功课，于是想起了曾经见过的一个项目：基于JAVA语言的局域网通信，可以参考QQ，如下</p>
-    
-    <a class="article-more-a" href="/2021/08/23/2021-08-23-JAVA%E5%B1%80%E5%9F%9F%E7%BD%91%E8%81%8A%E5%A4%A9%E5%B0%8F%E7%A8%8B%E5%BA%8F/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JAVA</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">TCP/IP协议</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2021/08/23/2021-08-23-JAVA%E5%B1%80%E5%9F%9F%E7%BD%91%E8%81%8A%E5%A4%A9%E5%B0%8F%E7%A8%8B%E5%BA%8F/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.</span> <span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9F%A2%E9%87%8F%E6%96%B9%E7%A8%8B-Vector-Function"><span class="toc-number">2.</span> <span class="toc-text">矢量方程 Vector Function</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Arc-Length-In-The-Space"><span class="toc-number">3.</span> <span class="toc-text">Arc Length In The Space</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Unit-Tangent-Vector-and-Unit-Normal-Vector"><span class="toc-number">4.</span> <span class="toc-text">Unit Tangent Vector and Unit Normal Vector</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Curvature"><span class="toc-number">5.</span> <span class="toc-text">Curvature</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Acceleration"><span class="toc-number">6.</span> <span class="toc-text">Acceleration</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Questions-and-Examples"><span class="toc-number">7.</span> <span class="toc-text">Questions and Examples</span></a></li></ol>
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
 
-  
-    <article id="post-java数据结构与算法汇总" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2021/07/23/java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E6%B1%87%E6%80%BB/" target="_blank">java数据结构与算法汇总</a>
-  
-    </h1>
-  
 
 
-  
-  
-<a href="/2021/07/23/java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E6%B1%87%E6%80%BB/" class="archive-article-date">
-        <time datetime="2021-07-23T17:56:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-23</time>
-</a>
 
-  
-  
-    
 
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>作者:Yao Xiong</p>
-<p>[TOC]</p>
-<h1 id="序"><a href="#序" class="headerlink" title="序"></a>序</h1><p>学习计算机主要是了解计算机组成结构与如何灵活运用计算机；在灵活运用计算机时，数据结构与算法起到重中之重的作用。要想成为计算机大神，数据结构与算法是必须跨过的坎。Good Luck👍。</p>
-    
-    <a class="article-more-a" href="/2021/07/23/java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E6%B1%87%E6%80%BB/#more">more >></a>
-    
-    
 
-    
 
-    
 
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数据结构与算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2021/07/23/java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E6%B1%87%E6%80%BB/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-程序员必会十大算法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2021/05/16/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BF%85%E4%BC%9A%E5%8D%81%E5%A4%A7%E7%AE%97%E6%B3%95/" target="_blank">程序员必会十大算法</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2021/05/16/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BF%85%E4%BC%9A%E5%8D%81%E5%A4%A7%E7%AE%97%E6%B3%95/" class="archive-article-date">
-        <time datetime="2021-05-16T17:53:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-16</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h2 id="1-二分查找算法"><a href="#1-二分查找算法" class="headerlink" title="1. 二分查找算法"></a>1. 二分查找算法</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>二分查找是常见的查找算法，使用二分查找的前提是要拥有一组有序的数组，查找时我们根据数组下标，把数组一分为二，通过比较中间的数来确认目标的位置，如下图</p>
-<p><img src="/2021/05/16/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BF%85%E4%BC%9A%E5%8D%81%E5%A4%A7%E7%AE%97%E6%B3%95/image-20210419111722840.png" alt="image-20210419111722840"></p>
-<p>这样查找相比于一般的for循环遍历，效率大大提高，时间可达log(N)</p>
-    
-    <a class="article-more-a" href="/2021/05/16/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BF%85%E4%BC%9A%E5%8D%81%E5%A4%A7%E7%AE%97%E6%B3%95/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数据结构与算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2021/05/16/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BF%85%E4%BC%9A%E5%8D%81%E5%A4%A7%E7%AE%97%E6%B3%95/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-部分排序算法可视化" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2021/04/26/%E9%83%A8%E5%88%86%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%8F%AF%E8%A7%86%E5%8C%96/" target="_blank">部分排序算法可视化</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2021/04/26/%E9%83%A8%E5%88%86%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%8F%AF%E8%A7%86%E5%8C%96/" class="archive-article-date">
-        <time datetime="2021-04-26T13:44:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-26</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h2 id="程序介绍"><a href="#程序介绍" class="headerlink" title="程序介绍"></a>程序介绍</h2><p>最近复习排序算法闲着无聊，做了一个可视化小程序，这个程序支持部分排序算法，当然有兴趣可以自己扩展</p>
-<p>我将冒泡排序，选择排序，插入排序，希尔排序，快速排序做了可视化，展示一下最终效果</p>
-<p><img src="/2021/04/26/%E9%83%A8%E5%88%86%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%8F%AF%E8%A7%86%E5%8C%96/image-20210426093157864.png" alt="image-20210426093157864"></p>
-<p>感兴趣可以看看我原来写的排序算法的链接（归并排序，桶排序）</p>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/peterbearXY/article/details/114648428">https://blog.csdn.net/peterbearXY/article/details/114648428</a></p>
-    
-    <a class="article-more-a" href="/2021/04/26/%E9%83%A8%E5%88%86%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%8F%AF%E8%A7%86%E5%8C%96/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2021/04/26/%E9%83%A8%E5%88%86%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%8F%AF%E8%A7%86%E5%8C%96/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-DisjointSet" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2021/04/20/DisjointSet/" target="_blank">Disjoint Set并查集</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2021/04/20/DisjointSet/" class="archive-article-date">
-        <time datetime="2021-04-20T17:49:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-20</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id><a href="#" class="headerlink" title></a></h1><p><img src="/2021/04/20/DisjointSet/image-20210501132259731.png" alt="image-20210501132259731"></p>
-<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>并查集是一种数据结构，其实现简单，仅仅需要几行代码与一个数组就可以实现；</p>
-<ol>
-<li>创建一个数组，用于储存每个顶点的父结点，默认都是自己</li>
-<li>union合并方法，用于将2个顶点合并在一起</li>
-<li>find方法，用于寻找最终的根节点</li>
-</ol>
-<p>克鲁斯卡尔算法中就运用到并查集的知识，用于寻找2个顶点之间是否构成回路</p>
-<p>我们自动生成迷宫时，也会需要使用disjoint方法，当入口与出口构成回路时，我们就完成了迷宫的设计</p>
-    
-    <a class="article-more-a" href="/2021/04/20/DisjointSet/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数据结构与算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2021/04/20/DisjointSet/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Comparator And Iterator" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2021/03/23/Comparator%20And%20Iterator/" target="_blank">Comparable 与 Iterable 接口</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2021/03/23/Comparator%20And%20Iterator/" class="archive-article-date">
-        <time datetime="2021-03-23T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-23</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h2 id="Comparable"><a href="#Comparable" class="headerlink" title="Comparable"></a>Comparable</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><em>Interface Comparable<T></T></em></p>
-<p><img src="/2021/03/23/Comparator%20And%20Iterator/image-20210406201919191.png" alt="image-20210406201919191"></p>
-<p>如果一个类实现Comparable接口，其必须实现CompareTo方法，调用此方法的对象将与里面的o对象进行比较</p>
-<p>例如：</p>
-<p>x.CompareTo(T y) </p>
-<p>x和y进行比较，如果相等返回0；若x&gt;y，返回1；若x&lt;y，返回-1；当然，CompareTo方法的实现由我们自己定义</p>
-<ul>
-<li>实现此接口的对象拥有自然顺序（natural ordering）</li>
-<li>对象之间可以使用CompareTo(T o)来进行比较</li>
-<li>如果对储存此对象的集合调用sort方法，Collections工具类会根据CompareTo方法排序：Collections.sort(list2);</li>
-</ul>
-    
-    <a class="article-more-a" href="/2021/03/23/Comparator%20And%20Iterator/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2021/03/23/Comparator%20And%20Iterator/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-java入门" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/12/09/java%E5%85%A5%E9%97%A8/" target="_blank">java入门</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/12/09/java%E5%85%A5%E9%97%A8/" class="archive-article-date">
-        <time datetime="2020-12-09T05:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-09</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>作者：Yao Xiong</p>
-<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>学习一门编程语言不是一件难事，在本书的前言我要郑重强调一下这件事。学习如逆水行舟，不进则退；只要大家坚持，相信最后定会有所收获。本书作为一本入门的工具书，会侧重讲解JAVA的基础知识，旨在引导读者进入JAVA的学习大门。</p>
-<h2 id="什么是JAVA"><a href="#什么是JAVA" class="headerlink" title="什么是JAVA"></a>什么是JAVA</h2><p>JAVA是一种面向对象的高阶编程语言，在JAVA中有句老话：万物皆对象。对于java的介绍我引用百科的一些解释。（Java具有简单性、面向对象、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F/19276232">分布式</a>、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%81%A5%E5%A3%AE%E6%80%A7/4430133">健壮性</a>、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%AE%89%E5%85%A8%E6%80%A7/7664678">安全性</a>、平台独立与可移植性、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%A4%9A%E7%BA%BF%E7%A8%8B/1190404">多线程</a>、动态性等特点 [2] 。Java可以编写<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/2331979">桌面应用程序</a>、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/Web%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F">Web应用程序</a>、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/4905336">分布式系统</a>和<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F/186978">嵌入式系统</a>应用程序等）</p>
-    
-    <a class="article-more-a" href="/2020/12/09/java%E5%85%A5%E9%97%A8/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/12/09/java%E5%85%A5%E9%97%A8/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2020-11-10-ESL101-Argumentative-Essay-(hole)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/11/10/2020-11-10-ESL101-Argumentative-Essay-(hole)/" target="_blank">大一ESL101 Argumentative Essay (hole)</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/11/10/2020-11-10-ESL101-Argumentative-Essay-(hole)/" class="archive-article-date">
-        <time datetime="2020-11-10T05:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-10</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h1><p> Is Camp Green Lake actually beneficial for the boys?</p>
-    
-    <a class="article-more-a" href="/2020/11/10/2020-11-10-ESL101-Argumentative-Essay-(hole)/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/11/10/2020-11-10-ESL101-Argumentative-Essay-(hole)/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
-    </nav>
-  
 
 
           </div>
@@ -1229,8 +531,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
