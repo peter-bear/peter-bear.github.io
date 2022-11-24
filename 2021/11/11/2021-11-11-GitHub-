@@ -6,47 +6,55 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://peter-bear.github.io">
-  <title>Calculus 3-Vector Application | peterbear</title>
+  <title>GitHub 远程仓库托管(上传)操作 | peterbear</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="介绍矢量也可以被进行参数化，如之前提到的Line Equation,线等式其实也是矢量进行参数化的一种表现形式。若我们将矢量进行参数化，我们就能用矢量方程去模拟X,Y,Z平面的物体运动变化。本节将介绍矢量方程以及随着矢量方程衍生的其他矢量。">
+  <meta name="description" content="介绍 最近想着把文件上传到远程仓库，进而可以多设备协同操作，但是在搭建远程仓库的过程中遇到了一些问题，所以想把这些问题记录下来，既可以分享给他人，也方便自己以后遇到相同问题好查看。 本博客将介绍我是如何上传代码到GitHub，以及我遇到的一些问题与总结">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Calculus 3-Vector Application">
-<meta property="og:url" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/index.html">
+<meta property="og:title" content="GitHub 远程仓库托管(上传)操作">
+<meta property="og:url" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-">
 <meta property="og:site_name" content="peterbear">
-<meta property="og:description" content="介绍矢量也可以被进行参数化，如之前提到的Line Equation,线等式其实也是矢量进行参数化的一种表现形式。若我们将矢量进行参数化，我们就能用矢量方程去模拟X,Y,Z平面的物体运动变化。本节将介绍矢量方程以及随着矢量方程衍生的其他矢量。">
+<meta property="og:description" content="介绍 最近想着把文件上传到远程仓库，进而可以多设备协同操作，但是在搭建远程仓库的过程中遇到了一些问题，所以想把这些问题记录下来，既可以分享给他人，也方便自己以后遇到相同问题好查看。 本博客将介绍我是如何上传代码到GitHub，以及我遇到的一些问题与总结">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003184135670.png">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003184151943.png">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003184633317.png">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003184713187.png">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003184819198.png">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003194536698.png">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003194551180.png">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003195314848.png">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003195529004.png">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003195646457.png">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003195802373.png">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003214321142.png">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003214156188.png">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003214447168.png">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003214247936.png">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003213952288.png">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003214002111.png">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003214030017.png">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003214841508.png">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/Q1.png">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/Q2.png">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/Q3.png">
-<meta property="og:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003215605751.png">
-<meta property="article:published_time" content="2021-10-03T04:00:00.000Z">
-<meta property="article:modified_time" content="2022-11-24T20:00:34.730Z">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/github.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111234500616.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111223918357.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111224112985.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111224137566.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111224345271.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111224520769.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111225133175.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111225405906.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111225537771.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111230315732.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111220727240.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111222509762.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111231344553.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111230922932.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111231510332.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111231617095.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111232122372.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111233240255.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111233351941.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111233754417.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111220727240.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111220915195.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111223046499.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111222509762.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111220126935.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111221117429.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111221351672.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111221709710.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111232122372.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111234245247.png">
+<meta property="og:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/image-20211111234048120.png">
+<meta property="article:published_time" content="2021-11-11T05:00:00.000Z">
+<meta property="article:modified_time" content="2022-11-24T20:00:37.410Z">
 <meta property="article:author" content="peter">
-<meta property="article:tag" content="数学">
-<meta property="article:tag" content="微积分">
+<meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003184135670.png">
+<meta name="twitter:image" content="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/github.png">
   
     <link rel="alternative" href="/atom.xml" title="peterbear" type="application/atom+xml">
   
@@ -227,14 +235,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-2021-10-3-Calculus-3-Vector-Application" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-2021-11-11-GitHub-?????????" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      Calculus 3-Vector Application
+      GitHub 远程仓库托管(上传)操作
     </h1>
   
 
@@ -246,8 +254,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/" class="archive-article-date">
-        <time datetime="2021-10-03T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-03</time>
+<a href="/2021/11/11/2021-11-11-GitHub-?????????/" class="archive-article-date">
+        <time datetime="2021-11-11T05:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-11</time>
 </a>
 
   
@@ -260,7 +268,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">541字</span>
+      <span class="post-count">1.2k字</span>
     </span>
   </span>
 
@@ -269,7 +277,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">2分</span>
+      <span class="post-count">4分</span>
     </span>
   </span>
 </div>
@@ -280,62 +288,133 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>矢量也可以被进行参数化，如之前提到的Line Equation,线等式其实也是矢量进行参数化的一种表现形式。若我们将矢量进行参数化，我们就能用矢量方程去模拟X,Y,Z平面的物体运动变化。本节将介绍矢量方程以及随着矢量方程衍生的其他矢量。</p>
+    <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p><img src="/2021/11/11/2021-11-11-GitHub-?????????/github.png"></p>
+<p>最近想着把文件上传到远程仓库，进而可以多设备协同操作，但是在搭建远程仓库的过程中遇到了一些问题，所以想把这些问题记录下来，既可以分享给他人，也方便自己以后遇到相同问题好查看。</p>
+<p>本博客将介绍我是如何上传代码到GitHub，以及我遇到的一些问题与总结</p>
 <span id="more"></span>
 
+<p>由于是新手教程，步骤会比较多，但是讲了可能会遇到的问题以及部分细节</p>
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111234500616.png" alt="image-20211111234500616"></p>
+<h2 id="如何上传"><a href="#如何上传" class="headerlink" title="如何上传"></a>如何上传</h2><p>我将上传代码分为2个部分：</p>
+<ol>
+<li>在GitHub上建仓库</li>
+<li>在本地进行Git Bash上传</li>
+</ol>
+<h3 id="在GitHub上创建仓库"><a href="#在GitHub上创建仓库" class="headerlink" title="在GitHub上创建仓库"></a>在GitHub上创建仓库</h3><p>进入GitHub进入 Repositories  发现了一个绿色按钮，点击创建新的仓库</p>
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111223918357.png" alt="image-20211111223918357"></p>
+<p>填写想要创建的仓库的名称与是否添加readme文档</p>
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111224112985.png" alt="image-20211111224112985"></p>
+<p>完成后向下滑动，点击<img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111224137566.png" alt="image-20211111224137566"></p>
+<p><mark>远程就创建完成了</mark>接着可以从本地通过Git上传</p>
+<p><strong>记得复制Code下的SSH或者HTTPS</strong></p>
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111224345271.png" alt="image-20211111224345271"></p>
+<h3 id="本地bash操作"><a href="#本地bash操作" class="headerlink" title="本地bash操作"></a>本地bash操作</h3><h4 id="步骤1：下载Git"><a href="#步骤1：下载Git" class="headerlink" title="步骤1：下载Git"></a>步骤1：下载Git</h4><p>先下载Git软件，这个就不多介绍了（有手就行），<a target="_blank" rel="noopener" href="https://git-scm.com/downloads">Git下载链接</a></p>
+<h4 id="步骤2：进入目录"><a href="#步骤2：进入目录" class="headerlink" title="步骤2：进入目录"></a>步骤2：进入目录</h4><p>安装好后进入<strong>想要使用Git上传的目录</strong>，<mark>单击右键</mark></p>
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111224520769.png" alt="image-20211111224520769"></p>
+<h4 id="步骤3：进入Git-Bash"><a href="#步骤3：进入Git-Bash" class="headerlink" title="步骤3：进入Git Bash"></a>步骤3：进入Git Bash</h4><p>进入Git Bash Here</p>
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111225133175.png" alt="image-20211111225133175"></p>
+<h4 id="步骤5：初始化本地仓库"><a href="#步骤5：初始化本地仓库" class="headerlink" title="步骤5：初始化本地仓库"></a>步骤5：初始化本地仓库</h4><p>然后输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">初始化git文件</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111225405906.png" alt="image-20211111225405906"></p>
+<p>由于我这里以及初始化完成了，所以有下面这行字，如果没有，则说明init成功</p>
+<p><strong>会看到想要git的文件夹里面有个.git文件</strong></p>
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111225537771.png" alt="image-20211111225537771"></p>
+<p><mark>如果没有看到，打开windows的隐藏文件夹选项看看</mark></p>
+<h4 id="步骤6：把所有要上传文件名加载到Git目录"><a href="#步骤6：把所有要上传文件名加载到Git目录" class="headerlink" title="步骤6：把所有要上传文件名加载到Git目录"></a>步骤6：把所有要上传文件名加载到Git目录</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br><span class="line">我这里意思是全部加载到Git中（因为我想要全部加入进去），</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111230315732.png" alt="image-20211111230315732"></p>
+<p>如果不想全部加入， 可以参考下面的链接（或者搜索引擎），修改add后面的参数</p>
+<p><a target="_blank" rel="noopener" href="https://git-scm.com/docs/git-add">https://git-scm.com/docs/git-add</a></p>
+<p>加进去后可以检查一下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git ls-files</span><br><span class="line">展示所有在git中的文件名</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111220727240.png" alt="image-20211111220727240"></p>
+<h4 id="步骤7：输入远程仓库url"><a href="#步骤7：输入远程仓库url" class="headerlink" title="步骤7：输入远程仓库url"></a>步骤7：输入远程仓库url</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add 自己取个变量名（一般使用origin） 远程仓库的链接（GitHub Code那边）</span><br></pre></td></tr></table></figure>
 
 
-<h2 id="矢量方程-Vector-Function"><a href="#矢量方程-Vector-Function" class="headerlink" title="矢量方程 Vector Function"></a>矢量方程 Vector Function</h2><p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003184135670.png" alt="image-20211003184135670"></p>
-<p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003184151943.png" alt="image-20211003184151943"></p>
-<p>矢量方程，r(t), x,y,z方向变化随着参数t变化而变化</p>
-<p>矢量方程x,y,z各个方向都有指定的函数，如f(t), g(t), h(t).</p>
-<p>矢量方程同样可以进行求导，求积分，算极限</p>
-<p><strong>极限</strong></p>
-<p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003184633317.png" alt="image-20211003184633317"></p>
-<p><strong>求导</strong></p>
-<p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003184713187.png" alt="image-20211003184713187"></p>
-<p><strong>矢量方程的求导法则</strong></p>
-<p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003184819198.png" alt="image-20211003184819198"></p>
-<p><strong>求积分</strong></p>
-<p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003194536698.png" alt="image-20211003194536698"></p>
-<p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003194551180.png" alt="image-20211003194551180"></p>
-<h2 id="Arc-Length-In-The-Space"><a href="#Arc-Length-In-The-Space" class="headerlink" title="Arc Length In The Space"></a>Arc Length In The Space</h2><p>计算线段在空间中随着时间所行走的长度</p>
-<p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003195314848.png" alt="image-20211003195314848"></p>
-<p>化简</p>
-<p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003195529004.png" alt="image-20211003195529004"></p>
-<p>换句话</p>
-<p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003195646457.png" alt="image-20211003195646457"></p>
-<h2 id="Unit-Tangent-Vector-and-Unit-Normal-Vector"><a href="#Unit-Tangent-Vector-and-Unit-Normal-Vector" class="headerlink" title="Unit Tangent Vector and Unit Normal Vector"></a>Unit Tangent Vector and Unit Normal Vector</h2><p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003195802373.png" alt="image-20211003195802373"></p>
-<p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003214321142.png" alt="image-20211003214321142"></p>
-<p>Unit Normal Vector</p>
-<p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003214156188.png" alt="image-20211003214156188"></p>
-<p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003214447168.png" alt="image-20211003214447168"></p>
-<p>Normal 和 Tangent 在图中的表现形式 （T的方向与V速度的方向一致）：</p>
-<p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003214247936.png" alt="image-20211003214247936"></p>
-<h2 id="Curvature"><a href="#Curvature" class="headerlink" title="Curvature"></a>Curvature</h2><p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003213952288.png" alt="image-20211003213952288"></p>
-<p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003214002111.png" alt="image-20211003214002111"></p>
-<p>一般计算Curvature都是通过电脑maple计算，Curvature(r(t))</p>
-<p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003214030017.png" alt="image-20211003214030017"></p>
-<p>k = 1/ R, 直线的curvature为1</p>
-<h2 id="Acceleration"><a href="#Acceleration" class="headerlink" title="Acceleration"></a>Acceleration</h2><p>Acceleration其实分为Tangential Acceleration 与 Normal Acceleration (分别对应Tangent方向与Normal方向)</p>
-<p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003214841508.png" alt="image-20211003214841508"></p>
-<p>|v|是speed， 速率</p>
-<p>d|v|/dt 是the rate of speed, speed up or slow</p>
-<p>aT 为tangential 方向的acceleration大小</p>
-<p>aN为normal方向acceleration大小</p>
-<h2 id="Questions-and-Examples"><a href="#Questions-and-Examples" class="headerlink" title="Questions and Examples"></a>Questions and Examples</h2><p>下面是关于Acceleration和Tangential Vector与Normal Vector的例题</p>
-<p>Q1 </p>
-<p>A satellite is travelling at a constant speed in a circular orbit 400 miles above the surface of earth where the acceleration of gravity is g = 30 ft/s^2. What is the speed of the satellite ? (Assumptions: radius of the earth 4000  miles; 1 mile is 5280ft)</p>
-<p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/Q1.png" alt="Q1"></p>
-<p>Q2</p>
-<p>At a point     P in the xy-plane, where distances are measured in meters, the unit  tangent vector of an object’s path is &lt;3/5, 4/5&gt;, the curvature is 1 meter^-1, and its acceleration vector is &lt;3,5&gt; meters/second^2. At  what rate is the object changing speed at P? What is the object’s speed at     P?</p>
-<p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/Q2.png" alt="Q2"></p>
-<p>Q3</p>
-<p>An object is traveling in a clockwise direction around the ellipse 4x^2+9y^2 = 36.  When it reaches the point x =0, y=2 meters, its acceleration vector is 3i+5j meter/s^2. What is its speed and at what rate is it speeding up or  slowing down at that time?</p>
-<p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/Q3.png" alt="Q3"></p>
-<p>Q4</p>
-<p>What is the  maximum magnitude of the force required to cause an 5kg object to move at  a constant speed of 4 meters/second along the parabola y = x^2?</p>
-<p><img src="/2021/10/03/2021-10-3-Calculus-3-Vector-Application/image-20211003215605751.png" alt="image-20211003215605751"></p>
+
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111222509762.png" alt="image-20211111222509762"></p>
+<h4 id="步骤8：Commit"><a href="#步骤8：Commit" class="headerlink" title="步骤8：Commit"></a>步骤8：Commit</h4><p>Commit，相当于要告诉别人，谁做了什么，怎么做的,然后准备上传</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;init repo&quot;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111231344553.png" alt="image-20211111231344553"></p>
+<p><mark>问题</mark></p>
+<p>开始没有commit，直接进行后面的操作，一堆Bug，如下</p>
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111230922932.png" alt="image-20211111230922932"></p>
+<p>然后commit时没有输入 -m  或者 没有输入 commit 后面的信息， 问题如下</p>
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111231510332.png" alt="image-20211111231510332"></p>
+<p><strong>注意</strong></p>
+<p>没有输入commit后面的信息会进入bash shell文档，类似于这种</p>
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111231617095.png" alt="image-20211111231617095"></p>
+<p>其实输入<mark>:q! </mark>可以退出这个文档不保存（这是linux vm命令）</p>
+<h4 id="步骤9：创建分支"><a href="#步骤9：创建分支" class="headerlink" title="步骤9：创建分支"></a>步骤9：创建分支</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch -M main</span><br><span class="line">我这里创建的本地分支名称是main</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111232122372.png" alt="image-20211111232122372"></p>
+<h4 id="步骤10：配置上传用户名"><a href="#步骤10：配置上传用户名" class="headerlink" title="步骤10：配置上传用户名"></a>步骤10：配置上传用户名</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;your_email@example.com&quot;</span><br><span class="line">git config --global user.name &quot;your_user_name&quot;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>配置完检查</p>
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111233240255.png" alt="image-20211111233240255"></p>
+<h4 id="步骤11：最后一步Push"><a href="#步骤11：最后一步Push" class="headerlink" title="步骤11：最后一步Push"></a>步骤11：最后一步Push</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin main</span><br><span class="line">origin 是之前写的 remote url</span><br><span class="line">main 是之前写的本地分支</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111233351941.png" alt="image-20211111233351941"></p>
+<p>为了避免本地分支与远程分支不一样的情况，可以使用下面代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/453a56923028">参考链接</a></p>
+<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111233754417.png" alt="image-20211111233754417"></p>
+<h2 id="总结常用命令"><a href="#总结常用命令" class="headerlink" title="总结常用命令"></a>总结常用命令</h2><h3 id="查看本地Git目录中的文件"><a href="#查看本地Git目录中的文件" class="headerlink" title="查看本地Git目录中的文件"></a>查看本地Git目录中的文件</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git ls-files</span><br><span class="line">查看在Git中，之后会上传的文件有哪些</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111220727240.png" alt="image-20211111220727240"></p>
+<h3 id="重置Git"><a href="#重置Git" class="headerlink" title="重置Git"></a>重置Git</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git reset</span><br><span class="line">重置Git中要上传的文件，虽然重置了，但是git remote中的url并没有重置</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111220915195.png" alt="image-20211111220915195"></p>
+<p>将文件全部清空可以达到类似效果，只是有些部分没有重置</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clean -xdf</span><br><span class="line">把文件删除清空</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111223046499.png" alt="image-20211111223046499"></p>
+<h3 id="Remote-url操作"><a href="#Remote-url操作" class="headerlink" title="Remote url操作"></a>Remote url操作</h3><h4 id="添加remote-url"><a href="#添加remote-url" class="headerlink" title="添加remote url"></a>添加remote url</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/peter-bear/JavaFundationPractice.git</span><br><span class="line">添加remote url， 换句话说就是把url存到某个变量中，以便后面使用</span><br><span class="line">git remote add 变量 远程仓库地址</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111222509762.png" alt="image-20211111222509762"></p>
+<h4 id="查看remote-url"><a href="#查看remote-url" class="headerlink" title="查看remote url"></a>查看remote url</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br><span class="line">查看remote url</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111220126935.png" alt="image-20211111220126935"></p>
+<h4 id="修改remote-url"><a href="#修改remote-url" class="headerlink" title="修改remote url"></a>修改remote url</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git remote set-url origin git@github.com:peter-bear/JavaPractice.git</span><br><span class="line"></span><br><span class="line">修改url：</span><br><span class="line">origion 是 remote url变量名， </span><br><span class="line">git@github.com:peter-bear/JavaPractice.git 是 远程仓库地址</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111221117429.png" alt="image-20211111221117429"></p>
+<p><strong>修改url需要知道url变量的名字，这个变量需要存在， 不然结果如下</strong></p>
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111221351672.png" alt="image-20211111221351672"></p>
+<h4 id="删除remote-url"><a href="#删除remote-url" class="headerlink" title="删除remote url"></a>删除remote url</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git remote rm main</span><br><span class="line">当有些url我们不想用时，我们可以使用此命令删除</span><br><span class="line">main 在这里指的是 之前我们设置的url变量</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111221709710.png" alt="image-20211111221709710"></p>
+<h4 id="其他关于remote的操作的中文版-GitHub"><a href="#其他关于remote的操作的中文版-GitHub" class="headerlink" title="其他关于remote的操作的中文版 (GitHub)"></a>其他关于remote的操作的中文版 (GitHub)</h4><p><a target="_blank" rel="noopener" href="https://docs.github.com/cn/get-started/getting-started-with-git/managing-remote-repositories">https://docs.github.com/cn/get-started/getting-started-with-git/managing-remote-repositories</a></p>
+<h3 id="Branch-分支"><a href="#Branch-分支" class="headerlink" title="Branch 分支"></a>Branch 分支</h3><h4 id="创建本地分支"><a href="#创建本地分支" class="headerlink" title="创建本地分支"></a>创建本地分支</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -M main</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111232122372.png" alt="image-20211111232122372"></p>
+<h4 id="查看本地分支"><a href="#查看本地分支" class="headerlink" title="查看本地分支"></a>查看本地分支</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch</span><br><span class="line">查看本地分支</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111234245247.png" alt="image-20211111234245247"></p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/git/git-branch.html">关于分支的介绍</a></p>
+<p><a target="_blank" rel="noopener" href="https://git-scm.com/book/be/v2/Git-Branching-Branch-Management">Git 文档</a></p>
+<h3 id="Config-配置"><a href="#Config-配置" class="headerlink" title="Config 配置"></a>Config 配置</h3><h4 id="config-用户名与邮箱"><a href="#config-用户名与邮箱" class="headerlink" title="config 用户名与邮箱"></a>config 用户名与邮箱</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;your_email@example.com&quot;</span><br><span class="line">git config --global user.name &quot;your_user_name&quot;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="获取config的结果"><a href="#获取config的结果" class="headerlink" title="获取config的结果"></a>获取config的结果</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --get user.name</span><br><span class="line">get config --get user.email</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/11/11/2021-11-11-GitHub-?????????/image-20211111234048120.png" alt="image-20211111234048120"></p>
 
     
 
@@ -350,7 +429,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/" title="Calculus 3-Vector Application" target="_blank">https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/</a>
+          <a href="https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/" title="GitHub 远程仓库托管(上传)操作" target="_blank">https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-?????????/</a>
         </li>
         
         <li>
@@ -372,11 +451,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数学</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">微积分</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
         		</li>
       		
 		</ul>
@@ -432,7 +507,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://peter-bear.github.io/2021/10/03/2021-10-3-Calculus-3-Vector-Application/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://peter-bear.github.io/2021/11/11/2021-11-11-GitHub-" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -447,18 +522,18 @@
 
 <nav id="article-nav">
   
-    <a href="/2021/10/15/2021-10-15-Calculus-3-Partial-Derivative/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2022/02/18/2022-2-18-Intro-to-Proof-????/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Calculus 3-Partial Derivative
+          Intro to Proof 离散数学
         
       </div>
     </a>
   
   
-    <a href="/2021/09/09/2021-9-9-Calculus-3-Vector-Introduction/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Calculus 3-Vector Introduction</div>
+    <a href="/2021/10/30/2021-10-30-Muti-Integrals/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Muti-Integrals</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -485,7 +560,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.</span> <span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9F%A2%E9%87%8F%E6%96%B9%E7%A8%8B-Vector-Function"><span class="toc-number">2.</span> <span class="toc-text">矢量方程 Vector Function</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Arc-Length-In-The-Space"><span class="toc-number">3.</span> <span class="toc-text">Arc Length In The Space</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Unit-Tangent-Vector-and-Unit-Normal-Vector"><span class="toc-number">4.</span> <span class="toc-text">Unit Tangent Vector and Unit Normal Vector</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Curvature"><span class="toc-number">5.</span> <span class="toc-text">Curvature</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Acceleration"><span class="toc-number">6.</span> <span class="toc-text">Acceleration</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Questions-and-Examples"><span class="toc-number">7.</span> <span class="toc-text">Questions and Examples</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.</span> <span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E4%B8%8A%E4%BC%A0"><span class="toc-number">2.</span> <span class="toc-text">如何上传</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8GitHub%E4%B8%8A%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93"><span class="toc-number">2.1.</span> <span class="toc-text">在GitHub上创建仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0bash%E6%93%8D%E4%BD%9C"><span class="toc-number">2.2.</span> <span class="toc-text">本地bash操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A41%EF%BC%9A%E4%B8%8B%E8%BD%BDGit"><span class="toc-number">2.2.1.</span> <span class="toc-text">步骤1：下载Git</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A42%EF%BC%9A%E8%BF%9B%E5%85%A5%E7%9B%AE%E5%BD%95"><span class="toc-number">2.2.2.</span> <span class="toc-text">步骤2：进入目录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A43%EF%BC%9A%E8%BF%9B%E5%85%A5Git-Bash"><span class="toc-number">2.2.3.</span> <span class="toc-text">步骤3：进入Git Bash</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A45%EF%BC%9A%E5%88%9D%E5%A7%8B%E5%8C%96%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93"><span class="toc-number">2.2.4.</span> <span class="toc-text">步骤5：初始化本地仓库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A46%EF%BC%9A%E6%8A%8A%E6%89%80%E6%9C%89%E8%A6%81%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E5%90%8D%E5%8A%A0%E8%BD%BD%E5%88%B0Git%E7%9B%AE%E5%BD%95"><span class="toc-number">2.2.5.</span> <span class="toc-text">步骤6：把所有要上传文件名加载到Git目录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A47%EF%BC%9A%E8%BE%93%E5%85%A5%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93url"><span class="toc-number">2.2.6.</span> <span class="toc-text">步骤7：输入远程仓库url</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A48%EF%BC%9ACommit"><span class="toc-number">2.2.7.</span> <span class="toc-text">步骤8：Commit</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A49%EF%BC%9A%E5%88%9B%E5%BB%BA%E5%88%86%E6%94%AF"><span class="toc-number">2.2.8.</span> <span class="toc-text">步骤9：创建分支</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A410%EF%BC%9A%E9%85%8D%E7%BD%AE%E4%B8%8A%E4%BC%A0%E7%94%A8%E6%88%B7%E5%90%8D"><span class="toc-number">2.2.9.</span> <span class="toc-text">步骤10：配置上传用户名</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A411%EF%BC%9A%E6%9C%80%E5%90%8E%E4%B8%80%E6%AD%A5Push"><span class="toc-number">2.2.10.</span> <span class="toc-text">步骤11：最后一步Push</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%93%E6%9E%9C"><span class="toc-number">2.3.</span> <span class="toc-text">结果</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">3.</span> <span class="toc-text">总结常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%9C%AC%E5%9C%B0Git%E7%9B%AE%E5%BD%95%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6"><span class="toc-number">3.1.</span> <span class="toc-text">查看本地Git目录中的文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E7%BD%AEGit"><span class="toc-number">3.2.</span> <span class="toc-text">重置Git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Remote-url%E6%93%8D%E4%BD%9C"><span class="toc-number">3.3.</span> <span class="toc-text">Remote url操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0remote-url"><span class="toc-number">3.3.1.</span> <span class="toc-text">添加remote url</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8Bremote-url"><span class="toc-number">3.3.2.</span> <span class="toc-text">查看remote url</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9remote-url"><span class="toc-number">3.3.3.</span> <span class="toc-text">修改remote url</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A0%E9%99%A4remote-url"><span class="toc-number">3.3.4.</span> <span class="toc-text">删除remote url</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%85%B3%E4%BA%8Eremote%E7%9A%84%E6%93%8D%E4%BD%9C%E7%9A%84%E4%B8%AD%E6%96%87%E7%89%88-GitHub"><span class="toc-number">3.3.5.</span> <span class="toc-text">其他关于remote的操作的中文版 (GitHub)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Branch-%E5%88%86%E6%94%AF"><span class="toc-number">3.4.</span> <span class="toc-text">Branch 分支</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF"><span class="toc-number">3.4.1.</span> <span class="toc-text">创建本地分支</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF"><span class="toc-number">3.4.2.</span> <span class="toc-text">查看本地分支</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Config-%E9%85%8D%E7%BD%AE"><span class="toc-number">3.5.</span> <span class="toc-text">Config 配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#config-%E7%94%A8%E6%88%B7%E5%90%8D%E4%B8%8E%E9%82%AE%E7%AE%B1"><span class="toc-number">3.5.1.</span> <span class="toc-text">config 用户名与邮箱</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96config%E7%9A%84%E7%BB%93%E6%9E%9C"><span class="toc-number">3.5.2.</span> <span class="toc-text">获取config的结果</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
